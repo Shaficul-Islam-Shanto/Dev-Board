@@ -32,7 +32,7 @@
             <div class="flex items-center space-x-6 ">
                 <div class="flex items-center rounded-3xl nav-count div-bg p-3">
                     <div><img src="assets/checkbox.png" alt="checkbox"></div>
-                    <p class="ml-3 text-2xl font-bold">23</p>
+                    <p class="ml-3 text-2xl font-bold" id="total-number">23</p>
                 </div>
                 <div>
                     <img src="assets/theme-btn.png" class="lg:mr-5 div-bg rounded-full p-2 cursor-pointer"
@@ -49,7 +49,7 @@
                     <div class="flex justify-center items-center space-x-5 py-8 px-4">
                         <div class="rounded-full bg-white"><img src="assets/checkbox.png" class=" p-4 " alt="checkbox">
                         </div>
-                        <p class="text-xl lg:text-left">Task assigned <br> <span class="font-bold text-3xl">05</span>
+                        <p class="text-xl lg:text-left">Task assigned <br> <span class="font-bold text-3xl" id="task-number">6</span>
                         </p>
                     </div>
                 </div>
@@ -69,16 +69,16 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr class="border-dashed">
             <div class="card-container grid lg:grid-cols-3 lg:gap-9 mt-5">
                 <div class="card-1  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
                     <button class="m-5 p-2 rounded bg-white">ShopEase</button>
                     <h3 class="text-2xl mx-5 font-bold">Fix Mobile Button Issue</h3>
                     <p class="m-5 p-2 rounded-lg bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick...</p>
-                    <div class="flex justify-around ">
+                    <div class="flex justify-around" id="btn-container">
                         <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                        <button class="bg-[#3752FD] text-white btn-completed rounded-lg py-4 px-6">Completed</button>
                     </div>
                 </div>
                 <div class="card-2  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
@@ -86,9 +86,9 @@
                     <h3 class="text-2xl mx-5 font-bold">Add Dark Mode</h3>
                     <p class="m-5 p-2 rounded bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                     </p>
-                    <div class="flex justify-around ">
+                    <div class="flex justify-around "id="btn-container">
                         <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                        <button class="bg-[#3752FD] btn-completed text-white rounded-lg py-4 px-6">Completed</button>
                     </div>
                 </div>
                 <div class="card-3  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
@@ -96,18 +96,18 @@
                     <h3 class="text-2xl mx-5 font-bold">Optimize Home page</h3>
                     <p class="m-5 p-2 rounded bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick...</p>
-                    <div class="flex justify-around ">
+                    <div class="flex justify-around " id="btn-container">
                         <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                        <button class="bg-[#3752FD] text-white btn-completed rounded-lg py-4 px-6">Completed</button>
                     </div>
                 </div>
                 <div class="card-4  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
                     <button class="m-5 p-2 rounded bg-white">Meta</button>
                     <h3 class="text-2xl mx-5 font-bold">Add new emoji 🤲</h3>
                     <p class="m-5 p-2 rounded bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    <div class="flex justify-around ">
+                    <div class="flex justify-around "id="btn-container">
                         <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                        <button class="bg-[#3752FD] text-white btn-completed rounded-lg py-4 px-6">Completed</button>
                     </div>
                 </div>
                 <div class="card-5 div-bg pb-5 rounded-lg mt-5 lg:mt-0">
@@ -115,18 +115,18 @@
                     <h3 class="text-2xl mx-5 font-bold">Integrate OpenAI API </h3>
                     <p class="m-5 p-2 rounded bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick...</p>
-                    <div class="flex justify-around ">
+                    <div class="flex justify-around "id="btn-container">
                         <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                        <button class="bg-[#3752FD] text-white btn-completed rounded-lg py-4 px-6">Completed</button>
                     </div>
                 </div>
                 <div class="card-6 div-bg pb-5 rounded-lg mt-5 lg:mt-0">
-                    <button class="m-5 p-2 rounded bg-white">Glassdoar</button>
+                    <button class="m-5 p-2 rounded bg-white">Glassdoor</button>
                     <h3 class="text-2xl mx-5 font-bold">Improve Job searching</h3>
                     <p class="m-5 p-2 rounded bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    <div class="flex justify-around ">
+                    <div class="flex justify-around " id="btn-container">
                         <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                        <button class="bg-[#3752FD] text-white btn-completed rounded-lg py-4 px-6">Completed</button>
                     </div>
                 </div>
 
@@ -141,9 +141,10 @@
                 <h3 class="text-xl ">Activity Log</h3>
             </div>
             <button class="bg-[#3752FD] text-white rounded-lg py-2 px-4 mt-5">Clear History</button>
+            <hr class="border-dashed mt-5">
         </div>
     </section>
-
+    <script src="buttonChange.js"></script>
 </body>
 
 </html>
