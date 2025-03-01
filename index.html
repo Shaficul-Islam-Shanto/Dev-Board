@@ -32,7 +32,7 @@
             <div class="flex items-center space-x-6 ">
                 <div class="flex items-center rounded-3xl nav-count div-bg p-3">
                     <div><img src="assets/checkbox.png" alt="checkbox"></div>
-                    <p class="ml-3 text-xl font-bold">23</p>
+                    <p class="ml-3 text-2xl font-bold">23</p>
                 </div>
                 <div>
                     <img src="assets/theme-btn.png" class="lg:mr-5 div-bg rounded-full p-2 cursor-pointer"
@@ -41,12 +41,14 @@
             </div>
         </div>
     </nav>
-    <section class="flex flex-col lg:flex-row w-10/12 mx-auto my-10 space-x-5">
+    <hr>
+    <section class="flex flex-col lg:flex-row w-10/12 mx-auto my-5 space-x-5">
         <div class="side-1 lg:w-10/12 ">
             <div class="flex lg:items-center flex-col lg:flex-row text-center lg:space-x-8">
                 <div class="class-1 div-bg rounded-xl flex-none">
-                    <div class="flex justify-center items-center space-x-5 py-8 px-4"><img src="assets/checkbox.png"
-                            class="bg-white p-2 rounded-full" alt="checkbox">
+                    <div class="flex justify-center items-center space-x-5 py-8 px-4">
+                        <div class="rounded-full bg-white"><img src="assets/checkbox.png" class=" p-4 " alt="checkbox">
+                        </div>
                         <p class="text-xl lg:text-left">Task assigned <br> <span class="font-bold text-3xl">05</span>
                         </p>
                     </div>
@@ -59,28 +61,86 @@
                     </div>
                 </div>
                 <div class="class-3 div-bg rounded-xl flex-none">
-                    <div class="flex justify-center items-center space-x-5 py-8 px-4 "><img src="assets/calender.png"
-                            class="bg-white p-2  rounded-full" alt="checkbox">
+                    <div class="flex justify-center items-center space-x-5 py-8 px-4 "><div class="rounded-full bg-white">
+                        <img src="assets/calender.png"
+                            class="p-4" alt="checkbox">
+                    </div>
                         <p class="text-xl lg:text-left">Wed, <br> <span class="font-bold">July 28 2025</span> </p>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="card-container">
-                <div class="card-1  mt-5 div-bg pb-5 rounded-lg">
+            <div class="card-container grid lg:grid-cols-3 lg:gap-9 mt-5">
+                <div class="card-1  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
                     <button class="m-5 p-2 rounded bg-white">ShopEase</button>
-                    <h3 class="text-2xl mx-5">Fix Mobile Button Issue</h3>
-                    <p class="m-5 p-2 rounded bg-white">Debug using Chrome DevTools, check for overlapping...</p>
-                        <div class="flex justify-around ">
-                            <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                            <button class="bg-[#3752FD] text-white rounded-lg py-4 px-8">Completed</button>
-                        </div>
+                    <h3 class="text-2xl mx-5 font-bold">Fix Mobile Button Issue</h3>
+                    <p class="m-5 p-2 rounded-lg bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick...</p>
+                    <div class="flex justify-around ">
+                        <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                    </div>
                 </div>
+                <div class="card-2  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
+                    <button class="m-5 p-2 rounded bg-white">CloudSync</button>
+                    <h3 class="text-2xl mx-5 font-bold">Add Dark Mode</h3>
+                    <p class="m-5 p-2 rounded bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                    </p>
+                    <div class="flex justify-around ">
+                        <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                    </div>
+                </div>
+                <div class="card-3  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
+                    <button class="m-5 p-2 rounded bg-white">SwiftPay</button>
+                    <h3 class="text-2xl mx-5 font-bold">Optimize Home page</h3>
+                    <p class="m-5 p-2 rounded bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick...</p>
+                    <div class="flex justify-around ">
+                        <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                    </div>
+                </div>
+                <div class="card-4  div-bg pb-5 rounded-lg mt-5 lg:mt-0">
+                    <button class="m-5 p-2 rounded bg-white">Meta</button>
+                    <h3 class="text-2xl mx-5 font-bold">Add new emoji 🤲</h3>
+                    <p class="m-5 p-2 rounded bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="flex justify-around ">
+                        <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                    </div>
+                </div>
+                <div class="card-5 div-bg pb-5 rounded-lg mt-5 lg:mt-0">
+                    <button class="m-5 p-2 rounded bg-white">Google LLC</button>
+                    <h3 class="text-2xl mx-5 font-bold">Integrate OpenAI API </h3>
+                    <p class="m-5 p-2 rounded bg-white">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick...</p>
+                    <div class="flex justify-around ">
+                        <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                    </div>
+                </div>
+                <div class="card-6 div-bg pb-5 rounded-lg mt-5 lg:mt-0">
+                    <button class="m-5 p-2 rounded bg-white">Glassdoar</button>
+                    <h3 class="text-2xl mx-5 font-bold">Improve Job searching</h3>
+                    <p class="m-5 p-2 rounded bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="flex justify-around ">
+                        <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
+                        <button class="bg-[#3752FD] text-white rounded-lg py-4 px-6">Completed</button>
+                    </div>
+                </div>
+
             </div>
         </div>
         </div>
-        <div class="side-2 lg:w-2/12 text-center my-5">
-            <h3>Activity Log</h3>
+        <div class="side-2 lg:w-2/12 text-center my-5 div-bg rounded-2xl py-5">
+            <div class="flex justify-center items-center space-x-2">
+                <div>
+                    <img src="assets/activity.png" alt="activity">
+                </div>
+                <h3 class="text-xl ">Activity Log</h3>
+            </div>
+            <button class="bg-[#3752FD] text-white rounded-lg py-2 px-4 mt-5">Clear History</button>
         </div>
     </section>
 
