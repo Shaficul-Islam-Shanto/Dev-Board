@@ -1,3 +1,8 @@
+const discoverBtn= document.getElementById("discover-btn")
+discoverBtn.addEventListener("click",function(){
+    window.location.href="blog.html"
+})
+
 const btnCompleted = document.querySelectorAll(".btn-completed");
 const headings = document.querySelectorAll(".heading");
 
@@ -8,7 +13,7 @@ if (currentDateElement) {
 }
 for (let i = 0; i < btnCompleted.length; i++) {
     btnCompleted[i].addEventListener("click", function () {
-        alert("Board Updated Successfully.");
+        alert("Board updated Successfully.");
 
         let taskElement = document.getElementById("task-number");
         let taskNumber = parseInt(taskElement.innerText);
@@ -23,7 +28,7 @@ for (let i = 0; i < btnCompleted.length; i++) {
         }
 
         btnCompleted[i].classList.add("disabled");
-
+        btnCompleted[i].disabled = true;
         const heading = headings[i];
         if (heading) {
             const activityInfo = document.getElementById("activity-info");
@@ -33,7 +38,13 @@ for (let i = 0; i < btnCompleted.length; i++) {
             p.innerText = `
             You have completed the task "${heading.innerText}" at ${formattedTime}.
             `;
+            p.style.margin="10px";
             activityInfo.appendChild(p);
+
+        }
+        const lastButtons = document.querySelectorAll(".btn-completed:not(.disabled)");
+        if (lastButtons.length === 0) {
+            alert("Congratulations! You have completed all the challenge task.");
         }
     });
 } const clearHistoryBtn = document.querySelector(".clear-history-btn");
@@ -42,7 +53,6 @@ clearHistoryBtn.addEventListener("click", function () {
     const activityInfo = document.getElementById("activity-info");
     activityInfo.innerHTML = '';
 });
-
 
 
 
